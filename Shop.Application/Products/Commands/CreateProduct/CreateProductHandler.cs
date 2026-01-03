@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Shop.Application.Products.DTOs;
+using Shop.Domain.Common.ValueObjects;
 using Shop.Domain.Products.Entities;
 using Shop.Domain.Products.Interface;
-using Shop.Domain.Products.ValueObjects;
 
 namespace Shop.Application.Products.Commands.CreateProduct
 {
@@ -22,7 +22,7 @@ namespace Shop.Application.Products.Commands.CreateProduct
         {
             var price = new Money(productCommand.Price);
             var product = new Product(productCommand.Name, price);
-            _repo.Add(product);
+            _repo.AddAsync(product);
         }
     }
 }

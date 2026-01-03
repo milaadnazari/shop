@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Shop.Domain.Common.Bases
 {
-    public class DomainException : Exception
+    public abstract class BaseEntity
     {
-        public DomainException(string message) : base(message)
-        {
-
-        }
+        public int Id { get; set; }
+        bool IsDeleted { get; set; } = false;
     }
 }

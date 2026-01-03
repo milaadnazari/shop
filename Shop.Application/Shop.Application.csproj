@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Common\Bases\" />
     <Folder Include="Common\Exception\" />
-    <Folder Include="Common\Interfaces\" />
     <Folder Include="Products\Queries\" />
   </ItemGroup>
 

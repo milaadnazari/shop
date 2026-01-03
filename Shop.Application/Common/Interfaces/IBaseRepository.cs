@@ -1,12 +1,12 @@
 ﻿using Shop.Domain.Common.Bases;
-using Shop.Domain.Products.Entities;
+using Shop.Domain.Common.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Domain.Common.Interfaces
+namespace Shop.Application.Common.Interfaces
 {
     public interface IBaseRepository<T> where T : BaseEntity
     {

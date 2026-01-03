@@ -17,7 +17,7 @@ namespace Shop.Application.Products.Commands
         }
         public void Update(Product product)
         {
-            _repository.Update(product);
+            _repository.UpdateAsync(product);
         }
     }
 }

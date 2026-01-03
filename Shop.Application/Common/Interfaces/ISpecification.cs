@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Domain.Common.Interfaces
+namespace Shop.Application.Common.Interfaces
 {
     public interface ISpecification<T>
     {

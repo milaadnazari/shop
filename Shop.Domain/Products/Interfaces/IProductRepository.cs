@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Shop.Domain.Products.Interface
 {
-    public interface IProductRepository : IBaseRepository<Product>
+    public interface IProductRepository 
     {
     }
 }
