@@ -9,6 +9,5 @@ namespace Shop.Domain.Common.Bases
     public abstract class BaseEntity
     {
         public int Id { get; set; }
-        bool IsDeleted { get; set; } = false;
     }
 }
