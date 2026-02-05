@@ -1,0 +1,31 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Shop.Domain.Customers.Entities;
+using Shop.Domain.Orders.Entities;
+using Shop.Domain.Products.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Shop.Infrastructure.Persistence
+{
+    public sealed class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<DbContext> options) : base(options)
+        { }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(
+                typeof(AppDbContext).Assembly);
+
+            base.OnModelCreating(modelBuilder);
+        }
+    }
+}

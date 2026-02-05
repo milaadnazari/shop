@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Infrastructure.Data.Repositories.Base
+namespace Shop.Infrastructure.Persistence.Repositories.Base
 {
     internal class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {

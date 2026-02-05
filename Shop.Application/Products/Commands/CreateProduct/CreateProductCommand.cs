@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Shop.Application.Products.Commands.CreateProduct
 {
-    public record CreateProductCommand(string Name, decimal Price);
+    public record CreateProductCommand(string Name, decimal Price, int categoryId);
 }

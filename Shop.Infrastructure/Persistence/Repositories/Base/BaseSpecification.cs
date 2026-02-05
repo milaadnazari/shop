@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Infrastructure.Data.Repositoies.Base
+namespace Shop.Infrastructure.Persistence.Repositoies.Base
 {
     public abstract class BaseSpecification<T> : ISpecification<T>
     {

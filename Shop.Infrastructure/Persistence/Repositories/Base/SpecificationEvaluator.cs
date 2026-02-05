@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shop.Infrastructure.Data.Repositoies.Base
+namespace Shop.Infrastructure.Persistence.Repositoies.Base
 {
     public class SpecificationEvaluator<T> where T : class
     {
