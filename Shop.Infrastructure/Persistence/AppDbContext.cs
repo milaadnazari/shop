@@ -12,7 +12,7 @@ namespace Shop.Infrastructure.Persistence
 {
     public sealed class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<DbContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         { }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
