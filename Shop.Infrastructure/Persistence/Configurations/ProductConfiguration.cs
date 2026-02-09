@@ -29,7 +29,8 @@ namespace Shop.Infrastructure.Persistence.Configurations
             builder.OwnsOne(x => x.Price, Money =>
                 {
                     Money.Property(m => m.Amount)
-                        .HasColumnName("Amount");
+                        .HasColumnName("Amount")
+                        .HasPrecision(24,0);
                 });
         }
     }

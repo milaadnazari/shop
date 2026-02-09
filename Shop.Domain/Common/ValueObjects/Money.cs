@@ -1,4 +1,5 @@
 ﻿using Shop.Domain.Common;
+using Shop.Domain.Common.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;

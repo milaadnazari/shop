@@ -24,6 +24,9 @@ namespace Shop.Infrastructure.Persistence.Configurations
             builder.HasOne(x=> x.Product)
                 .WithMany(p=>p.Orders)
                 .HasForeignKey(o => o.ProductId);
+
+            builder.Property(x => x.UnitPrice)
+                .HasPrecision(24, 0);
         }
     }
 }
